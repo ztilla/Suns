@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    border: 10px;
+    color: rebeccapurple;
+}
+.main {
+    border: 10px;
+    border-color: green;
+}
+.main.one {
+    color: red;
+}
+
+.main.two { 
+    color: green
+}
+.main.three {
+    color: blue;
+}
+.bottom {
+    color: pink;
+}
+.footer {
+    display: flex;
+    border: 10px;
+    color: blue;
+}
