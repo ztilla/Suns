@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,17 @@ body {
     padding: 0 10%;
     height: 100vh;
     background-color: black;
+    
 }
+
+.border {
+    border-style:solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-width: 10px;
+    border-image: conic-gradient(rgb(58, 176, 29), yellow, lime, aqua, blue, magenta, red) 1;
+}
+
 
 .header {
     display: flex;
@@ -14,9 +25,9 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
-    border-radius: 15px;
+  
     min-height: 30px;
-    max-width: ;
+    
 }
 
 .logo {
@@ -25,12 +36,12 @@ body {
     margin-bottom: 20px;
 
 }
-
 .super {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+    
 }
 
 .container {
@@ -50,7 +61,7 @@ body {
     flex-grow: 1;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 15px;
+    
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -73,10 +84,21 @@ body {
     border: 10px;
     color: white;
     background-color: #1f2937;
-    border-radius: 15px;
+ 
     min-height: 30px;
     margin-top: 20px;
-    align-items: center;
-   
+    align-items:center;
     flex-direction: column;
+
+}
+
+.service {
+    display: flex;
+    color: lightskyblue;
+}
+
+ul {
+    list-style-type: none;
+    
+    
 }
