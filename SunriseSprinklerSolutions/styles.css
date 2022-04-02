@@ -1,41 +1,73 @@
 
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0 10%;
     height: 100vh;
+    background-image: url("img/grass.jpg");
     background-color: black;
+    background-position: center;
+
     
 }
 
 .border {
-    border-style:solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-width: 10px;
-    border-image: conic-gradient(rgb(58, 176, 29), yellow, lime, aqua, blue, magenta, red) 1;
+    
+    width: 95%%;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
 }
+
+.border::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+    
+
+
 
 
 .header {
     display: flex;
-    background-color: #1f2937;
+    background-color:rgb(96, 94, 239, .7);
     color: white;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px;
-  
-    min-height: 30px;
-    
+    margin-bottom: 10px;
+    min-height: 40px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+button {
+    background-color: rgba(235, 80, 23, 0.897);
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.2s;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 2em;
+    box-sizing: border-box;
+    margin: 0 0.3em 0.3em 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+.logo .log {
+    border-radius: 50%;}
+    
 .super {
     display: flex;
     flex-direction: column;
@@ -47,58 +79,64 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex:1;
-   min-height: 300px;
-   max-height: max-content;
-
+    justify-content: flex-start;
+    min-height: 300px;
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
 }
 
+   
+}
+.container img {
+    border-radius: 10px;
+    
+}
+
+
 .sub {
-    background-color: rgba(87, 99, 241, 0.654);
+   
     color: white;
     display: flex;
     flex-grow: 1;
     margin-top: 10px;
     margin-bottom: 10px;
-    
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
-  
-
+    flex-wrap: wrap;
 }
-
+.sub .left {
+    display: flex;
+}
 .buffer {
-    color: rgb(81, 57, 235);
+    
+    color: rgb(38, 229, 69);
+    font-weight:900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;    
    justify-content: center;
    align-items: center;
+
+   background-color:rgb(96, 94, 239, .7);
+   border-radius: 20px;
 }
 
 .two .sub, .four .sub{
     flex-direction: row-reverse;
 }
 .footer {
+    margin-top: 10px;
     display: flex;
-    border: 10px;
     color: white;
-    background-color: #1f2937;
- 
-    min-height: 30px;
-    margin-top: 20px;
-    align-items:center;
     flex-direction: column;
+    align-items: center;
+}
+
+
 
 }
 
-.service {
-    display: flex;
-    color: lightskyblue;
-}
 
-ul {
-    list-style-type: none;
-    
-    
-}
+
+Photo by <a href="https://unsplash.com/@azlanbaharudin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Azlan Baharudin</a> on <a href="https://unsplash.com/s/photos/grass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
