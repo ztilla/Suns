@@ -4,15 +4,19 @@ body {
     margin: 0;
     padding: 0 10%;
     height: 100vh;
-    background-color: #1f2937;
+    background-color: black;
 }
 
 .header {
     display: flex;
     background-color: #1f2937;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 50px;
+    border-radius: 15px;
+    min-height: 30px;
+    max-width: ;
 }
 
 .logo {
@@ -34,13 +38,14 @@ body {
     flex-direction: column;
     justify-content: center;
     flex:1;
+   min-height: 300px;
+   max-height: max-content;
 
 }
 
 .sub {
-    background-color: rgb(26, 218, 26);
-    color: rgb(171, 31, 31);
-    opacity: .3;
+    background-color: rgba(87, 99, 241, 0.654);
+    color: white;
     display: flex;
     flex-grow: 1;
     margin-top: 10px;
@@ -49,11 +54,12 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+  
 
 }
 
 .buffer {
-    color: blueviolet;
+    color: rgb(81, 57, 235);
     display: flex;    
    justify-content: center;
    align-items: center;
@@ -63,8 +69,14 @@ body {
     flex-direction: row-reverse;
 }
 .footer {
-    text-align: center;
+    display: flex;
     border: 10px;
     color: white;
     background-color: #1f2937;
+    border-radius: 15px;
+    min-height: 30px;
+    margin-top: 20px;
+    align-items: center;
+   
+    flex-direction: column;
 }
