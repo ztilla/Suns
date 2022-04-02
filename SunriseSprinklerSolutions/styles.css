@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 15%;
+    padding: 0 10%;
     height: 100vh;
     background-color: #1f2937;
 }
@@ -11,7 +11,15 @@ body {
     display: flex;
     background-color: #1f2937;
     color: white;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
 }
 
 .super {
@@ -24,27 +32,39 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    flex:1;
 
 }
 
-.sub{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-   
-}
-.buffer {
-    background-color: pink;
+.sub {
+    background-color: rgb(26, 218, 26);
+    color: rgb(171, 31, 31);
+    opacity: .3;
     display: flex;
     flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.buffer {
+    color: blueviolet;
+    display: flex;    
    justify-content: center;
    align-items: center;
+}
+
+.two .sub, .four .sub{
+    flex-direction: row-reverse;
 }
 .footer {
     text-align: center;
     border: 10px;
     color: white;
     background-color: #1f2937;
-
 }
